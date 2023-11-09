@@ -20,7 +20,7 @@ const insertProduct = async (productData) => {
   const product = await prisma.product.create({
     data: {
       name: productData.name,
-      desription: productData.description,
+      description: productData.description,
       image: productData.image,
       price: productData.price,
     },

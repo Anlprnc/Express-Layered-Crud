@@ -1,5 +1,6 @@
 const express = require('express');
 const prisma = require('../db');
+const authMiddleware = require('../auth/auth.middleware');
 
 const {
   getAllProducts,
